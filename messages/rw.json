@@ -1,0 +1,277 @@
+{
+  "Header": {
+    "Hello": "Mwaramutse",
+    "sign in": "injira",
+    "All": "Byose",
+    "Gold": "Zahabu",
+    "Green": "Icyatsi",
+    "Red": "Umutuku",
+    "Sign up": "Iyandikishe",
+    "Sign in": "Injira",
+    "Sign out": "Sohoka",
+    "Admin": "Umuyobozi",
+    "Your account": "Konti yawe",
+    "Help & Settings": "Ubufasha n'Igenamiterere",
+    "Search Site": "Shakisha {name}",
+    "Dark": "Ijimye",
+    "Light": "Umuco",
+    "Color": "Ibara",
+    "Browsing History": "Amateka yo Gushakisha",
+    "Customer Service": "Serivisi z'Abakiriya",
+    "About Us": "Ibyerekeye twe",
+    "Help": "Ubufasha",
+    "Site Menu": "Menu y'Urubuga"
+  },
+  "Footer": {
+    "aboutTitle": "Ibyerekeye twe",
+    "aboutDescription": "Porogaramu yo gutanga amakuru no gukemura ibibazo by'abaturage",
+    "quickLinks": "Amakuru yo kuvanga",
+    "connect": "Tugane",
+    "allRightsReserved": "Uburenganzira bwose ni bwa CitizenConnect",
+    "Complaints": {
+      "publicDashboard": "Ikibaho cy'Ibirego"
+    },
+    "About": {
+      "title": "Ibyerekeye Sisitemu"
+    },
+    "Contact": {
+      "title": "Twandikire"
+    }
+  },
+  "Complaints": {
+    "publicDashboard": "Ikibaho cy'Ibirego",
+    "publicDashboardDescription": "Reba kandi ugendeye ku birego byose bisanzwe muri sisitemu yacu",
+    "resetFilters": "Ongera usubize Imyuzuro",
+    "submitComplaint": "Tanga Ikirego",
+    "noComplaintsFound": "Nta birego bibonetse",
+    "allCategories": "Ibyiciro Byose",
+    "allStatuses": "Imimerere Yose",
+    "addNew": "Ongeraho Ikirego Gishya",
+    "filterByCategory": "Shungura ku bwoko",
+    "filterByStatus": "Shungura ku mimerere",
+    "refresh": "Gerageza nanone",
+    "searchPlaceholder": "Shakisha ibirego...",
+    "title": "Umutwe",
+    "steps": {
+      "details": "Ibyerekeye Ikirego",
+      "location": "Aho biherereye",
+      "review": "Reba",
+      "confirmation": "Icyemezo"
+    },
+    "category": "Ubwoko bw'Ikirego",
+
+    "categories": {
+      "infrastructure": "Imiyoboro",
+      "sanitation": "Isuku",
+      "transportation": "Ubwikorezi",
+      "safety": "Umutekano",
+      "noise": "Induru",
+      "other": "Ibindi"
+    },
+    "status": {
+      "SUBMITTED": "Yatanzwe",
+      "IN_REVIEW": "Iri gusuzumwa",
+      "UNDER_REVIEW": "Iri gusuzumwa",
+      "IN_PROGRESS": "Iri gukorwa",
+      "RESOLVED": "Yarakemuwe",
+      "REJECTED": "Yanze"
+    },
+    "form": {
+      "title": "Umutwe",
+      "description": "Ibisobanuro",
+      "category": "Ubwoko",
+      "location": "Aho biherereye",
+      "attachments": "Inyandiko",
+      "submit": "Tanga Ikirego",
+      "next": "Ibikurikira",
+      "back": "Subira inyuma"
+    },
+    "loadingMap": "Iyubaka ikarita...",
+    "mapView": "Kureba ikarita"
+  },
+  "Home": {
+    "welcome": "Porotokoli y'Abaturage",
+    "description": "Ijwi ryawe rirafite agaciro. Tanga ibibazo, urebe iterambere, unahuze n'ubutegetsi.",
+    "stats": {
+      "complaints": "Ibirego Byatanzwe",
+      "resolved": "Ibibazo Byakemuwe",
+      "departments": "Ibyiciro by'Ubutegetsi"
+    },
+    "recentComplaints": "Ibibazo Vuba Aha",
+    "viewAll": "Reba Ibirego Byose",
+    "submitComplaint": "Tanga Ikirego"
+  },
+
+  "About": {
+    "title": "Ibyerekeye Sisitemu y'Ubufatanye n'Abaturage",
+    "description": "Porogaramu yateguwe guhuza abaturage n'ubutegetsi binyuze mu mvugo isobanutse no gukemura ibibazo vuba.",
+    "features": {
+      "transparency": {
+        "title": "Ubwigenge",
+        "description": "Ibirego byose n'ibyemezo byayo aboneka kuri bose kugirango haboneke neza ibikorwa."
+      },
+      "efficiency": {
+        "title": "Ikorana",
+        "description": "Imikorere yihuse yo gusubiza no gukemura ibibazo."
+      },
+      "accountability": {
+        "title": "Ukwishyura",
+        "description": "Kurikirana intego y'ikirego cyawe muri sisitemu."
+      },
+      "engagement": {
+        "title": "Ubufatanye mu Muryango",
+        "description": "Fatanya mu guteza imbere umuryango wawe ukoresheje uburyo bwo gutanga amakuru."
+      }
+    },
+    "howItWorks": {
+      "title": "Uko Ikora",
+      "step1": {
+        "title": "Tanga Ikirego",
+        "description": "Tanga ikibazo ukoresheje ifishi yacu yo kumurongo ifite amakuru yose."
+      },
+      "step2": {
+        "title": "Gusuzuma",
+        "description": "Itsinda ryacu rirabanza gushyira mu byiciro ikirego cyawe kugirango gikorerwe."
+      },
+      "step3": {
+        "title": "Gukemura Ikibazo",
+        "description": "Icyiciro gikurikira gukemura ikibazo cyawe."
+      },
+      "step4": {
+        "title": "Ikibazo Cyarakemuwe",
+        "description": "Uzamenyeshwa igihe ikirego cyawe cyakemuwe neza."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Twandikire",
+    "description": "Ufite ibibazo cyangwa ukenera ubufasha? Koresha ifishi iri hasi kutwandikira.",
+    "form": {
+      "name": "Amazina Yuzuye",
+      "email": "Imeli",
+      "department": "Icyiciro",
+      "message": "Ubutumwa Bwawe",
+      "submit": "Ohereza Ubutumwa",
+      "submitting": "Kohereza..."
+    },
+    "departments": {
+      "general": "Ibibazo Bisanzwe",
+      "technical": "Gufasha mu Bikorwa",
+      "complaints": "Icyiciro cy'Ibirego",
+      "feedback": "Ibitekerezo n'Ibyifuzo"
+    },
+    "successMessage": "Ubutumwa bwawe bwoherejwe neza!",
+    "errorMessage": "Ntago washoboye kohereza ubutumwa. Gerageza nanone.",
+    "contactInfo": {
+      "title": "Amakuru yo Kutwandikira",
+      "address": {
+        "title": "Aderesi",
+        "line1": "Ibiro by'Ubufatanye n'Abaturage",
+        "line2": "KG 7 Ave, Kigali, Rwanda"
+      },
+      "phone": "Telefone",
+      "email": "Imeli",
+      "hours": {
+        "title": "Igihe cy'Akazi",
+        "weekdays": "Kuwa Mbere - Kuwa Gatanu: 8:00 AM - 5:00 PM",
+        "weekends": "Kuwa Gatandatu: 9:00 AM - 1:00 PM"
+      }
+    }
+  },
+  "Admin": {
+    "Users": {
+      "title": "Gucunga Abakoresha",
+      "addNew": "Ongeraho Umukoresha Mushya",
+      "searchPlaceholder": "Shakisha abakoresha...",
+      "filterByRole": "Shungura ku mwanya",
+      "allRoles": "Imirya Yose",
+      "roles": {
+        "citizen": "Umuturage",
+        "agency": "Icyiciro cy'Ubutegetsi",
+        "admin": "Umuyobozi"
+      },
+      "refresh": "Kuvugurura",
+      "noUsersFound": "Nta bakoresha babonetse"
+    },
+    "Complaints": {
+      "title": "Gucunga Ibirego",
+      "addNew": "Ongeraho Ikirego Gishya",
+      "searchPlaceholder": "Shakisha Ibirego...",
+      "filterByStatus": "Shungura ku mimerere",
+      "filterByCategory": "Shungura ku bwoko",
+      "allStatuses": "Imimerere Yose",
+      "allCategories": "Ibyiciro Byose",
+      "refresh": "Kuvugurura",
+      "noComplaintsFound": "Nta birego bibonetse",
+      "status": {
+        "submitted": "Yatanzwe",
+        "inReview": "Iri gusuzumwa",
+        "inProgress": "Iri gukorwa",
+        "resolved": "Yarakemuwe",
+        "rejected": "Yanze"
+      }
+    },
+    "Departments": {
+      "title": "Gucunga Ibyiciro",
+      "addNew": "Ongeraho Icyiciro Gishya",
+      "searchPlaceholder": "Shakisha ibyiciro...",
+      "refresh": "Kuvugurura",
+      "noDepartmentsFound": "Nta byiciro byabonetse"
+    }
+  },
+  "Citizen": {
+    "Profile": {
+      "title": "Profili Yanjye",
+      "backToDashboard": "Subira ku Kibaho",
+      "updateSuccess": "Profili yawe yavugururwe neza!",
+      "updateError": "Ntago wavuguruje profili yawe. Gerageza nanone.",
+      "form": {
+        "name": "Amazina Yuzuye",
+        "email": "Imeli",
+        "emailNote": "Koresha ubufasha niba ushaka guhindura imeli yawe",
+        "phone": "Numero ya Telefone",
+        "address": "Aderesi",
+        "submit": "Bika Amahinduka",
+        "submitting": "Bika..."
+      }
+    },
+    "dashboard": "Ikibaho Cyawe",
+    "stats": {
+      "submitted": "Yatanzwe",
+      "inProgress": "Iri gukorwa",
+      "resolved": "Yarakemuwe"
+    },
+    "resolutionRate": "Ingano yo Gukemura",
+    "recentComplaints": "Ibirego Vuba Aha",
+    "viewAll": "Reba Byose",
+    "noComplaints": "Ntago wigeze utanga ikirego",
+    "quickActions": "Ibikorwa Vuba",
+    "submitNewComplaint": "Tanga Ikirego Gishya",
+    "updateProfile": "Kuvugurura Profili"
+  },
+  "Loading": {
+    "Loading": "Turi Gushakisha"
+  },
+  "Error": {
+    "Error": "Ntabwo Bikunze",
+    "Try again": "Gerageza Nanone",
+    "Back To Home": "Subira Ahabanza"
+  },
+  "toggleTheme": "Hindura Insanganyamatsiko",
+  "theme": {
+    "light": "Umucyo",
+    "dark": "Umwijima",
+    "system": "Sisitemu"
+  },
+  "toggleLanguage": "Hindura Ururimi",
+  "language": {
+    "en-US": "Icyongereza",
+    "fr": "Igifaransa",
+    "rw": "Ikinyarwanda"
+  },
+  "notifications": "Amatangazo",
+  "viewAllNotifications": "Reba amatangazo yose",
+  "form": {
+    "submitSuccess": "Ikirego cyawe cyatanzwe neza!"
+  }
+}
