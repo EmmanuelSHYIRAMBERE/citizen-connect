@@ -34,6 +34,10 @@ export function ComplaintCard({
 }) {
   const t = useTranslations("Complaints");
 
+  // Generate background color based on complaint index for three colors: Blue, Yellow, and Green
+  const backgroundColors = ["bg-blue-300", "bg-yellow-300", "bg-green-300"];
+  const backgroundColor = backgroundColors[index % backgroundColors.length];
+
   return (
     <Motion.div
       variants={cardVariants}
@@ -41,7 +45,7 @@ export function ComplaintCard({
       animate="visible"
       whileHover="hover"
       transition={{ delay: index * 0.1 }}
-      className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100"
+      className={`${backgroundColor} rounded-lg shadow-md overflow-hidden border border-gray-100`}
     >
       <Link href={`/complaints/${complaint.id}`} className="block p-6">
         <div className="flex justify-between items-start">

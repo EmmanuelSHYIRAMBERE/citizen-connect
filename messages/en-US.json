@@ -279,5 +279,18 @@
   "viewAllNotifications": "View all notifications",
   "form": {
     "submitSuccess": "Your complaint has been submitted successfully!"
+  },
+  "Chatbot": {
+    "title": "Citizen Assistant",
+    "welcome_message": "Hello! How can I help you today?",
+    "error_message": "Sorry, I encountered an error. Please try again.",
+    "typing": "Typing...",
+    "input_placeholder": "Type your message here...",
+    "send": "Send",
+    "ask_ai": "ASK AI",
+    "close": "Close chat",
+    "complaint_redirect_message": "I can help you with complaints. Would you like to:",
+    "new_complaint": "Submit New Complaint",
+    "view_complaints": "View Existing Complaints"
   }
 }
