@@ -23,7 +23,7 @@
     "Site Menu": "Menu du site"
   },
   "Footer": {
-    "aboutTitle": "À propos de nous",
+    "aboutTitle": "CitizenConnect",
     "aboutDescription": "Plateforme de participation citoyenne pour signaler les problèmes et suivre leur résolution",
     "quickLinks": "Liens rapides",
     "connect": "Connectez-vous avec nous",
@@ -285,5 +285,107 @@
     "complaint_redirect_message": "Je peux vous aider à déposer une réclamation. Souhaitez-vous :",
     "new_complaint": "Soumettre une nouvelle plainte",
     "view_complaints": "Afficher les plaintes existantes"
+  },
+  "Auth": {
+    "Register": {
+      "header": "Commencer",
+      "title": "Créer votre compte",
+      "description": "Commencez avec votre email ou un compte social",
+      "steps": {
+        "email": "Vérification d'Email",
+        "verification": "Vérification OTP",
+        "interests": "Sélection des Intérêts",
+        "password": "Configuration du Mot de Passe"
+      },
+      "back": "Retour",
+      "next": "Suivant",
+      "errors": {
+        "emailRequired": "L'email est requis",
+        "emailAndOtpRequired": "L'e-mail et l'OTP sont requis",
+        "invalidEmail": "Veuillez entrer un email valide",
+        "passwordLength": "Le mot de passe doit contenir au moins 8 caractères",
+        "passwordUppercase": "Doit contenir au moins une majuscule",
+        "passwordLowercase": "Doit contenir au moins une minuscule",
+        "passwordNumber": "Doit contenir au moins un chiffre",
+        "passwordMatch": "Les mots de passe doivent correspondre",
+        "nameRequired": "Une pièce d'identité nationale est requise",
+        "nationalIdRequired": "Le numérico est requis",
+        "nationalIdInvalid": "La carte d'identité nationale doit comporter 16 caractères",
+        "otpRequired": "OTP est requis",
+        "otpInvalid": "OTP invalide",
+        "interestsRequired": "Veuillez sélectionner au moins 3 intérêts"
+      },
+      "emailPlaceholder": "Entrez votre email",
+      "emailLabel": "Adresse email",
+      "passwordPlaceholder": "Créez un mot de passe",
+      "passwordLabel": "Mot de passe",
+      "confirmPasswordPlaceholder": "Confirmez votre mot de passe",
+      "confirmPasswordLabel": "Confirmer le Mot de Passe",
+      "namePlaceholder": "Entrez votre nom complet",
+      "nameLabel": "Nom Complet",
+      "nationalIdLabel": "Carte d'identité nationale",
+      "nationalIdPlaceholder": "Entrez votre carte d'identité nationale",
+      "otpPlaceholder": "Entrez le code à 6 chiffres",
+      "otpLabel": "Code de vérification",
+      "continueWithEmail": "Continuer avec Email",
+      "continueWithGoogle": "Continuer avec Google",
+      "alreadyHaveAccount": "Vous avez déjà un compte?",
+      "signIn": "Se connecter",
+      "resendCode": "Renvoyer le code",
+      "codeSent": "Code de vérification est envoyé à votre email",
+      "codeHasSent": "Nous avons envoyé un code à 6 chiffres à",
+      "verificationCodeSent": "Le code de vérification",
+      "VerifyCode": "Vérifier le code",
+      "VerifyCodeNotReceived": "Vous n'avez pas reçu de code ?",
+      "resend": "Renvoyer",
+      "emailVerified": "Email vérifié avec succès!",
+      "passwordSetupDescription": "Sécurisez votre compte avec un mot de passe fort !",
+      "completeRegistration": "Terminer l'Inscription",
+      "registrationSuccess": "Inscription réussie!",
+      "allRightsReserved": "Tous droits réservés",
+      "emailVerificationGreeting": "Bienvenue sur CitizenConnect !",
+      "dearUser": "Cher utilisateur estimé",
+      "emailVerificationSubject": "CitizenConnect : votre code de vérification",
+      "emailVerificationInstructions": "Merci de votre inscription à CitizenConnect ! Pour finaliser votre inscription, veuillez utiliser le code de vérification suivant :",
+      "emailVerificationExpiry": "Ce code expirera dans 30 minutes. Si vous ne l'avez pas demandé, veuillez ignorer cet e-mail.",
+      "emailVerificationClosing": "Cordialement,",
+      "emailVerificationSignature": "Équipe CitizenConnect"
+    },
+    "Login": {
+      "title": "Bienvenue",
+      "description": "Connectez-vous à votre compte",
+      "emailLabel": "Adresse email",
+      "emailPlaceholder": "Entrez votre email",
+      "passwordLabel": "Mot de passe",
+      "passwordPlaceholder": "Entrez votre mot de passe",
+      "rememberMe": "Se souvenir de moi",
+      "forgotPassword": "Mot de passe oublié?",
+      "signIn": "Se Connecter",
+      "noAccount": "Vous n'avez pas de compte?",
+      "signUp": "S'inscrire",
+      "continueWithGoogle": "Continuer avec Google",
+      "errors": {
+        "emailRequired": "L'email est requis",
+        "emailAndOtpRequired": "L'e-mail et l'OTP sont requis",
+        "invalidEmail": "Veuillez entrer un email valide",
+        "passwordRequired": "Le mot de passe est requis"
+      }
+    },
+    "ForgotPassword": {
+      "title": "Réinitialiser le Mot de Passe",
+      "description": "Entrez votre email pour recevoir un lien de réinitialisation",
+      "emailPlaceholder": "Entrez votre email",
+      "submit": "Envoyer le Lien de Réinitialisation",
+      "rememberPassword": "Vous vous souvenez de votre mot de passe?",
+      "signIn": "Se connecter",
+      "success": "Lien de réinitialisation envoyé à votre email"
+    },
+    "ResetPassword": {
+      "title": "Définir un Nouveau Mot de Passe",
+      "newPasswordPlaceholder": "Entrez un nouveau mot de passe",
+      "confirmPasswordPlaceholder": "Confirmez le nouveau mot de passe",
+      "submit": "Mettre à Jour le Mot de Passe",
+      "success": "Mot de passe mis à jour avec succès!"
+    }
   }
 }

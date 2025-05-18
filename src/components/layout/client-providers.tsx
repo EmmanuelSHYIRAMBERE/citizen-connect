@@ -3,7 +3,6 @@
 import AppInitializer from "./app-initializer";
 import { ClientSetting } from "@/types";
 import { ThemeProvider } from "./theme-provider";
-import { Toaster } from "../ui/toaster";
 
 export default function ClientProviders({
   setting,
@@ -19,7 +18,6 @@ export default function ClientProviders({
         defaultTheme={setting.common.defaultTheme.toLocaleLowerCase()}
       >
         <div>{children}</div>
-        <Toaster />
       </ThemeProvider>
     </AppInitializer>
   );
