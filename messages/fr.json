@@ -58,6 +58,7 @@
       "review": "Examen",
       "confirmation": "Confirmation"
     },
+    "category": "Catégorie",
     "categories": {
       "infrastructure": "Infrastructure",
       "sanitation": "Assainissement",
