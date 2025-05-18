@@ -2,7 +2,7 @@ export interface User {
   id: string;
   email: string;
   name: string;
-  role: "citizen" | "agency_staff" | "agency_admin" | "system_admin";
+  role: "CITIZEN" | "AGENCY" | "ADMIN";
   phone?: string;
   nationalId?: string; // For Rwanda context
   address?: string;

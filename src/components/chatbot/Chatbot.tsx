@@ -142,7 +142,7 @@ export default function Chatbot() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg z-50 flex items-center gap-2"
+          className="fixed bottom-6 right-6 bg-blue-600 text-yellow-500 px-6 py-3 rounded-full shadow-lg z-50 flex items-center gap-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@ export default function Chatbot() {
               d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
             />
           </svg>
-          <span>{t("ask_ai")}</span>
+          <span className="text-green-500">{t("ask_ai")}</span>
         </Motion.button>
       )}
 

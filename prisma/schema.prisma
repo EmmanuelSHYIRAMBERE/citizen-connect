@@ -7,27 +7,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id            String         @id @default(auto()) @map("_id") @db.ObjectId
-  name          String?
-  email         String?        @unique
-  emailVerified DateTime?
-  image         String?
-  role          Role           @default(CITIZEN)
-  accounts      Account[]
-  sessions      Session[]
-  complaints    Complaint[]
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
-  Notification  Notification[]
-}
-
-enum Role {
-  CITIZEN
-  AGENCY
-  ADMIN
-}
-
 model Account {
   id                String   @id @default(auto()) @map("_id") @db.ObjectId
   userId            String   @db.ObjectId
@@ -41,9 +20,10 @@ model Account {
   scope             String?
   id_token          String?  @db.String
   session_state     String?
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   createdAt         DateTime @default(now())
   updatedAt         DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
 }
@@ -53,62 +33,107 @@ model Session {
   sessionToken String   @unique
   userId       String   @db.ObjectId
   expires      DateTime
-  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
+model VerificationToken {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  identifier String
+  token      String   @unique
+  expires    DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 
+  @@unique([identifier, token])
+}
+
+model User {
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  interests     String[]
+  role          Role      @default(CITIZEN)
+
+  nationalId              String? @unique // For Rwanda context
+  address                 String?
+  position                String? // For agency staff
+  preferredLanguage       String?
+  notificationPreferences Json? // e.g., { "email": true, "sms": false }
+
+  isVerified Boolean?
+  isActive   Boolean?
+  lastLogin  DateTime @updatedAt
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  accounts      Account[]
+  sessions      Session[]
+  complaints    Complaint[]
+  department    Department[]
+  notifications Notification[] @relation("UserNotifications")
+}
+
+enum Role {
+  CITIZEN
+  AGENCY
+  ADMIN
+}
 
 model Complaint {
-    id                    String            @id @default(auto()) @map("_id") @db.ObjectId
-    reference             String?            @unique
-    title                 String
-    description           String
-    category              String
-    subCategory           String?
-    tags                  String[]
-    status                String            @default("submitted")
-    priority              String?            @default("medium")
-    isAnonymous           Boolean?           @default(false)
-    isPublic              Boolean?           @default(true)
-    departmentId          String?           @db.ObjectId
-    agencyId              String?           @db.ObjectId
-    assignedToId          String?           @db.ObjectId
-    citizenId             String?            @db.ObjectId
-    citizenName           String?
-    citizenContact        String?
-    contactPreference     String ?           @default("email")
-    createdAt             DateTime          @default(now())
-    updatedAt             DateTime          @updatedAt
-    dueDate               DateTime?
-    resolvedAt            DateTime?
-    location              Json?
-    viewCount             Int?               @default(0)
-    upvoteCount           Int?               @default(0)
-    similarComplaintsCount Int?
-    resolutionSummary     String?
-    citizenSatisfactionRating Int?
-    feedbackComment       String?
-    aiCategoryConfidence  Float?
-    internalNotes         String?
-    escalationReason      String?
-  
-    // Relations
-    timeline                Timeline[]
-    // department            Department        @relation(fields: [departmentId], references: [id])
-    // agency                Agency?           @relation(fields: [agencyId], references: [id])
-    assignedTo            User?             @relation(fields: [assignedToId], references: [id])
-    // citizen               User              @relation("citizenComplaints", fields: [citizenId], references: [id])
-    attachments           Attachment[]
-    // updates               ComplaintUpdate[]
-  
-    @@index([citizenId])
-    @@index([departmentId])
-    @@index([category])
-    @@index([status])
-    @@index([createdAt])
-  }
+  id                        String    @id @default(auto()) @map("_id") @db.ObjectId
+  reference                 String?   @unique
+  title                     String
+  description               String
+  category                  String
+  subCategory               String?
+  tags                      String[]
+  status                    String    @default("submitted")
+  priority                  String?   @default("medium")
+  isAnonymous               Boolean?  @default(false)
+  isPublic                  Boolean?  @default(true)
+  departmentId              String?   @db.ObjectId
+  agencyId                  String?   @db.ObjectId
+  assignedToId              String?   @db.ObjectId
+  citizenId                 String?   @db.ObjectId
+  citizenName               String?
+  citizenContact            String?
+  contactPreference         String?   @default("email")
+  createdAt                 DateTime  @default(now())
+  updatedAt                 DateTime  @updatedAt
+  dueDate                   DateTime?
+  resolvedAt                DateTime?
+  location                  Json?
+  viewCount                 Int?      @default(0)
+  upvoteCount               Int?      @default(0)
+  similarComplaintsCount    Int?
+  resolutionSummary         String?
+  citizenSatisfactionRating Int?
+  feedbackComment           String?
+  aiCategoryConfidence      Float?
+  internalNotes             String?
+  escalationReason          String?
+
+  // Relations
+  timeline    Timeline[]
+  // department            Department        @relation(fields: [departmentId], references: [id])
+  // agency                Agency?           @relation(fields: [agencyId], references: [id])
+  assignedTo  User?        @relation(fields: [assignedToId], references: [id])
+  // citizen               User              @relation("citizenComplaints", fields: [citizenId], references: [id])
+  attachments Attachment[]
+  // updates               ComplaintUpdate[]
+
+  @@index([citizenId])
+  @@index([departmentId])
+  @@index([category])
+  @@index([status])
+  @@index([createdAt])
+}
 
 enum ComplaintStatus {
   SUBMITTED
@@ -138,13 +163,17 @@ model Timeline {
 }
 
 model Notification {
-  id        String           @id @default(auto()) @map("_id") @db.ObjectId
-  userId    String           @db.ObjectId
-  user      User             @relation(fields: [userId], references: [id])
-  type      NotificationType
-  read      Boolean          @default(false)
-  data      Json
-  createdAt DateTime         @default(now())
+  id          String           @id @default(auto()) @map("_id") @db.ObjectId
+  userId      String           @db.ObjectId
+  user        User             @relation("UserNotifications", fields: [userId], references: [id])
+  type        NotificationType
+  title       String
+  message     String
+  image       String?
+  isRead      Boolean          @default(false)
+  referenceId String?          @db.ObjectId
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
 }
 
 enum NotificationType {
@@ -152,10 +181,14 @@ enum NotificationType {
   COMPLAINT_UPDATED
   COMPLAINT_RESOLVED
   MESSAGE_RECEIVED
+  SYSTEM_NOTIFICATION
 }
 
 model Department {
-  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  userId String @db.ObjectId
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   name        String
   description String
   email       String

@@ -23,7 +23,7 @@
     "Site Menu": "Site Menu"
   },
   "Footer": {
-    "aboutTitle": "About Us",
+    "aboutTitle": "CitizenConnect",
     "aboutDescription": "Description about your platform",
     "quickLinks": "Quick Links",
     "connect": "Connect With Us",
@@ -292,5 +292,107 @@
     "complaint_redirect_message": "I can help you with complaints. Would you like to:",
     "new_complaint": "Submit New Complaint",
     "view_complaints": "View Existing Complaints"
+  },
+  "Auth": {
+    "Register": {
+      "header": "Get started",
+      "title": "Create your account",
+      "description": "Get started with your email or social account",
+      "steps": {
+        "email": "Email Verification",
+        "verification": "OTP Verification",
+        "interests": "Select Interests",
+        "password": "Password Setup"
+      },
+      "back": "Back",
+      "next": "Next",
+      "errors": {
+        "emailRequired": "Email is required",
+        "emailAndOtpRequired": "Email and OTP is required",
+        "invalidEmail": "Please enter a valid email",
+        "passwordLength": "Password must be at least 8 characters",
+        "passwordUppercase": "Must contain at least one uppercase letter",
+        "passwordLowercase": "Must contain at least one lowercase letter",
+        "passwordNumber": "Must contain at least one number",
+        "passwordMatch": "Passwords must match",
+        "nameRequired": "Name is required",
+        "nationalIdRequired": "National ID is required",
+        "nationalIdInvalid": "National ID must be 16 characters",
+        "otpRequired": "OTP is required",
+        "otpInvalid": "Invalid OTP",
+        "interestsRequired": "Please select at least 3 interests"
+      },
+      "emailPlaceholder": "Enter your email",
+      "emailLabel": "Email address",
+      "passwordPlaceholder": "Create a password",
+      "passwordLabel": "Password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "confirmPasswordLabel": "Confirm Password",
+      "namePlaceholder": "Enter your full name",
+      "nameLabel": "Full Name",
+      "nationalIdLabel": "National ID",
+      "nationalIdPlaceholder": "Enter your national ID",
+      "otpPlaceholder": "Enter 6-digit code",
+      "otpLabel": "Verification code",
+      "continueWithEmail": "Continue with Email",
+      "continueWithGoogle": "Continue with Google",
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "resendCode": "Resend code",
+      "codeSent": "Verification code is being sent to your email",
+      "codeHasSent": "We sent a 6-digit code to",
+      "verificationCodeSent": "Verification code",
+      "VerifyCode": "Verify Code",
+      "VerifyCodeNotReceived": "Didn't receive a code?",
+      "resend": "Resend",
+      "emailVerified": "Email verified successfully!",
+      "passwordSetupDescription": "Secure your account with a strong password!",
+      "completeRegistration": "Complete Registration",
+      "registrationSuccess": "Registration successful!",
+      "allRightsReserved": "All rights reserved",
+      "emailVerificationGreeting": "Welcome to CitizenConnect!",
+      "dearUser": "Dear Valued User",
+      "emailVerificationSubject": "CitizenConnect: Your Verification Code",
+      "emailVerificationInstructions": "Thank you for joining CitizenConnect! To complete your registration, please use the following verification code:",
+      "emailVerificationExpiry": "This code will expire in 30 minutes. If you didn't request this, please ignore this email.",
+      "emailVerificationClosing": "Best regards,",
+      "emailVerificationSignature": "CitizenConnect Team"
+    },
+    "Login": {
+      "title": "Welcome Back",
+      "description": "Sign in to your account",
+      "emailLabel": "Email address",
+      "passwordLabel": "Password",
+      "emailPlaceholder": "Enter your email",
+      "passwordPlaceholder": "Enter your password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "signIn": "Sign In",
+      "continueWithGoogle": "Continue with Google",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "errors": {
+        "emailRequired": "Email is required",
+        "emailAndOtpRequired": "Email and OTP is required",
+        "invalidEmail": "Please enter a valid email",
+        "passwordRequired": "Password is required"
+      }
+    },
+    "ForgotPassword": {
+      "title": "Reset Password",
+      "description": "Enter your email to receive a reset link",
+      "emailPlaceholder": "Enter your email",
+      "submit": "Send Reset Link",
+      "rememberPassword": "Remembered your password?",
+      "signIn": "Sign in",
+      "success": "Password reset link sent to your email"
+    },
+    "ResetPassword": {
+      "title": "Set New Password",
+      "newPasswordPlaceholder": "Enter new password",
+      "confirmPasswordPlaceholder": "Confirm new password",
+      "submit": "Update Password",
+      "success": "Password updated successfully!"
+    }
   }
 }

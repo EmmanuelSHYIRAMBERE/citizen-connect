@@ -23,11 +23,11 @@
     "Site Menu": "Menu y'Urubuga"
   },
   "Footer": {
-    "aboutTitle": "Ibyerekeye twe",
+    "aboutTitle": "CitizenConnect",
     "aboutDescription": "Porogaramu yo gutanga amakuru no gukemura ibibazo by'abaturage",
     "quickLinks": "Amakuru yo kuvanga",
     "connect": "Tugane",
-    "allRightsReserved": "Uburenganzira bwose ni bwa CitizenConnect",
+    "allRightsReserved": "Uburenganzira bwose burabitswe",
     "Complaints": {
       "publicDashboard": "Ikibaho cy'Ibirego"
     },
@@ -97,7 +97,7 @@
       "resolved": "Ibibazo Byakemuwe",
       "departments": "Ibyiciro by'Ubutegetsi"
     },
-    "recentComplaints": "Ibibazo Vuba Aha",
+    "recentComplaints": "Ibirego Biherutse Kubazwa",
     "viewAll": "Reba Ibirego Byose",
     "submitComplaint": "Tanga Ikirego"
   },
@@ -286,5 +286,107 @@
     "complaint_redirect_message": "Ndashobora kugufasha mubibazo. Urashaka:",
     "new_complaint": "Tanga Ikirego gishya",
     "view_complaints": "Reba ibirego biriho"
+  },
+  "Auth": {
+    "Register": {
+      "header": "Tangira",
+      "title": "Fungura Konti Yawe",
+      "description": "Tangira ukoresheje imeli cyangwa konti ya sosiyete",
+      "steps": {
+        "email": "Kugenzura Imeli",
+        "verification": "Kugenzura OTP",
+        "interests": "Hitamo Ibintu Ushatse",
+        "password": "Gushiraho Ijambo ry'ibanga"
+      },
+      "back": "Subira Inyuma",
+      "next": "Ibikurikira",
+      "errors": {
+        "emailRequired": "Imeli ni  ngombwa",
+        "emailAndOtpRequired": "Imeli na OTP ni  ngombwa",
+        "invalidEmail": "Shyiramo imeli yemewe",
+        "passwordLength": "Ijambo ry'ibanga rigomba kuba nibura imibare 8",
+        "passwordUppercase": "Rigomba kugira nibura inyuguti nkuru imwe",
+        "passwordLowercase": "Rigomba kugira nibura inyuguti nto imwe",
+        "passwordNumber": "Rigomba kugira nibura umubare umwe",
+        "passwordMatch": "Amajambo y'ibanga agomba kuvanga",
+        "nameRequired": "Izina ryuzuye rirakenewe",
+        "nationalIdRequired": "Imibare ndangamuntu yawe irakenewe",
+        "nationalIdInvalid": "Imibare ndangamuntu igomba kuba 16",
+        "otpRequired": "OTP irakenewe",
+        "otpInvalid": "OTP ntabwo ari yo",
+        "interestsRequired": "Nyamuneka hitamo ibintu nibura 3 ushaka"
+      },
+      "emailPlaceholder": "Shyiramo imeli yawe",
+      "emailLabel": "Imeli",
+      "passwordPlaceholder": "Shyiramo ijambo ry'ibanga",
+      "passwordLabel": "Ijambo ry'ibanga",
+      "confirmPasswordPlaceholder": "Emeza ijambo ry'ibanga",
+      "confirmPasswordLabel": "Emeza Ijambo ry'ibanga",
+      "namePlaceholder": "Shyiramo izina ryuzuye",
+      "nameLabel": "Izina ryuzuye",
+      "nationalIdLabel": "Indangamuntu",
+      "nationalIdPlaceholder": "Andika indangamuntu yawe",
+      "otpPlaceholder": "Shyiramo kode y'imibare 6",
+      "otpLabel": "Kode yo kugenzura",
+      "continueWithEmail": "Komeza ukoresheje Imeli",
+      "continueWithGoogle": "Komeza ukoresheje Google",
+      "alreadyHaveAccount": "Ufite konti?",
+      "signIn": "Injira",
+      "resendCode": "Ongeraho kode",
+      "codeSent": "Kode yo kugenzura irimo koherezwa kuri imeli yawe",
+      "codeHasSent": "Twohereje kode y'imibare 6 kuri",
+      "verificationCodeSent": "Kode yo kugenzura",
+      "VerifyCode": "Kugenzura Kode",
+      "VerifyCodeNotReceived": "Ntabwo wakiriye kode?",
+      "resend": "Ongera Wohereze",
+      "emailVerified": "Imeli yawe yemejwe neza!",
+      "passwordSetupDescription": "Rinda konte yawe ukoresheje ijambobanga rikomeye!",
+      "completeRegistration": "Genzura Kwiyandikisha",
+      "registrationSuccess": "Kwiyandikisha byakunze neza!",
+      "allRightsReserved": "Uburenganzira bwose burabitswe",
+      "emailVerificationGreeting": "Ikaze kuri CitizenConnect!",
+      "dearUser": "Mutura Rwanda",
+      "emailVerificationSubject": "CitizenConnect: Kode yawe yo kugenzura",
+      "emailVerificationInstructions": "Urakoze kuba winjiye muri CitizenConnect! Kurangiza kwiyandikisha, nyamuneka koresha kode yo kugenzura ikurikira:",
+      "emailVerificationExpiry": "Iyi code izarangira muminota 30. Niba utasabye ibi, nyamuneka wirengagize iyi imeli.",
+      "emailVerificationClosing": "Ibihe Byiza,",
+      "emailVerificationSignature": "Itsinda CitizenConnect"
+    },
+    "Login": {
+      "title": "Murakaza neza",
+      "description": "Injira muri konti yawe",
+      "emailLabel": "Imeli",
+      "emailPlaceholder": "Shyiramo imeli yawe",
+      "passwordLabel": "Ijambo ry'ibanga",
+      "passwordPlaceholder": "Shyiramo ijambo ry'ibanga",
+      "rememberMe": "Nyibutsa",
+      "forgotPassword": "Wibagiwe ijambo ry'ibanga?",
+      "signIn": "Injira",
+      "continueWithGoogle": "Komeza ukoresheje Google",
+      "noAccount": "Nta konti ufite?",
+      "signUp": "Iyandikishe",
+      "errors": {
+        "emailRequired": "Imeli ni  ngombwa",
+        "emailAndOtpRequired": "Imeli na OTP ni  ngombwa",
+        "invalidEmail": "Shyiramo imeli yemewe",
+        "passwordRequired": "Ijambo ry'ibanga rirakenewe"
+      }
+    },
+    "ForgotPassword": {
+      "title": "Ongera ushyiremo ijambo ry'ibanga",
+      "description": "Shyiramo imeli yawe kugirango wakire umurongo wo gusubiramo",
+      "emailPlaceholder": "Shyiramo imeli yawe",
+      "submit": "Ohereza Umurongo wo Gusubiramo",
+      "rememberPassword": "Wibutse ijambo ry'ibanga?",
+      "signIn": "Injira",
+      "success": "Umurongo wo gusubiramo ijambo ry'ibanga woherejwe kuri imeli yawe"
+    },
+    "ResetPassword": {
+      "title": "Shiraho ijambo ry'ibanga rishya",
+      "newPasswordPlaceholder": "Shyiramo ijambo ry'ibanga rishya",
+      "confirmPasswordPlaceholder": "Emeza ijambo ry'ibanga rishya",
+      "submit": "Kuvugurura ijambo ry'ibanga",
+      "success": "Ijambo ry'ibanga ryavugururwe neza!"
+    }
   }
 }
