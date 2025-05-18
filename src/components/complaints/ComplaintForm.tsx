@@ -49,7 +49,7 @@ export default function ComplaintForm() {
   }
 
   return (
-    <AnimatedCard className="p-6">
+    <AnimatedCard className="p-6 bg-blue-500">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField

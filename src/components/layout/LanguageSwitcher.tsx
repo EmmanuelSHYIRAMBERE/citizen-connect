@@ -25,13 +25,16 @@ export function LanguageSwitcher() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
+      <DropdownMenuTrigger
+        asChild
+        className="shadow bg-blue-500 hover:bg-yellow-500 rounded-full "
+      >
         <Button variant="ghost" size="icon">
           <Languages className="h-[1.2rem] w-[1.2rem]" />
           <span className="sr-only">{t("toggleLanguage")}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className="bg-white shadow shadow-black">
         {locales.map((lang) => (
           <DropdownMenuItem
             key={lang.code}

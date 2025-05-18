@@ -272,5 +272,18 @@
   "viewAllNotifications": "Afficher toutes les Notifications",
   "form": {
     "submitSuccess": "Votre réclamation a été soumise avec succès !"
+  },
+  "Chatbot": {
+    "title": "Assistant Citoyen",
+    "welcome_message": "Bonjour! Comment puis-je vous aider aujourd'hui?",
+    "error_message": "Pardon, j'ai rencontré un erreur. Veuillez essayer encore.",
+    "typing": "Dactylographie...",
+    "input_placeholder": "Tapez votre message ici...",
+    "send": "Envoyer",
+    "ask_ai": "DEMANDER À L'IA",
+    "close": "Fermer la conversation",
+    "complaint_redirect_message": "Je peux vous aider à déposer une réclamation. Souhaitez-vous :",
+    "new_complaint": "Soumettre une nouvelle plainte",
+    "view_complaints": "Afficher les plaintes existantes"
   }
 }

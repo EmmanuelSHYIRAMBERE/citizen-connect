@@ -1,5 +1,6 @@
 import AdminSidebar from "@/components/layout/AdminSidebar";
 import AdminHeader from "@/components/layout/AdminHeader";
+import Chatbot from "@/components/chatbot/Chatbot";
 
 export default function AdminLayout({
   children,
@@ -12,6 +13,7 @@ export default function AdminLayout({
       <div className="flex-1 flex flex-col overflow-hidden">
         <AdminHeader />
         <main className="flex-1 overflow-y-auto p-4">{children}</main>
+        <Chatbot />
       </div>
     </div>
   );

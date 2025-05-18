@@ -44,6 +44,38 @@ const HomeComponent = () => {
       status: ComplaintStatus.UNDER_REVIEW,
       createdAt: new Date("2023-05-14"),
     },
+    {
+      id: "3",
+      title: "Broken street light",
+      description: "Street light not working on corner of 5th and Elm",
+      category: "infrastructure",
+      status: ComplaintStatus.RESOLVED,
+      createdAt: new Date("2023-05-13"),
+    },
+    {
+      id: "4",
+      title: "Noise pollution",
+      description: "Noise levels are too high on the 5th Avenue",
+      category: "noise",
+      status: ComplaintStatus.RESOLVED,
+      createdAt: new Date("2023-05-12"),
+    },
+    {
+      id: "5",
+      title: "Broken street light",
+      description: "Street light not working on corner of 5th and Elm",
+      category: "infrastructure",
+      status: ComplaintStatus.RESOLVED,
+      createdAt: new Date("2023-05-11"),
+    },
+    {
+      id: "6",
+      title: "Noise pollution",
+      description: "Noise levels are too high on the 5th Avenue",
+      category: "noise",
+      status: ComplaintStatus.RESOLVED,
+      createdAt: new Date("2023-05-10"),
+    },
   ];
 
   return (

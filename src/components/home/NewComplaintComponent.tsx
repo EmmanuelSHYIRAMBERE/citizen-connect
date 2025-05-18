@@ -70,7 +70,7 @@ const NewComplaintComponent = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <AnimatedCard>
+      <AnimatedCard className="shadow shadow-blue-500">
         <div className="max-w-3xl mx-auto">
           <Motion.h1
             initial={{ opacity: 0, y: 20 }}

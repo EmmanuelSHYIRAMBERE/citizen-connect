@@ -273,5 +273,18 @@
   "viewAllNotifications": "Reba amatangazo yose",
   "form": {
     "submitSuccess": "Ikirego cyawe cyatanzwe neza!"
+  },
+  "Chatbot": {
+    "title": "Umufasha w'abaturage",
+    "welcome_message": "Twabasuhuje! Nigute nshobora kugufasha uyu munsi?",
+    "error_message": "Mwihangane, Habye ikosa. Nyamuneka gerageza nanone.",
+    "typing": "Kwandika ...",
+    "input_placeholder": "Andika igitekerezo cyawe hano ...",
+    "send": "Ohereza",
+    "ask_ai": "BAZA AI",
+    "close": "funga ikiganiro",
+    "complaint_redirect_message": "Ndashobora kugufasha mubibazo. Urashaka:",
+    "new_complaint": "Tanga Ikirego gishya",
+    "view_complaints": "Reba ibirego biriho"
   }
 }

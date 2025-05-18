@@ -23,8 +23,10 @@ const PublicComplaintsComponent = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("all");
   const [statusFilter, setStatusFilter] = useState("all");
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     const fetchComplaints = async () => {
       try {
         let url = "/api/complaints/public?";
@@ -44,6 +46,10 @@ const PublicComplaintsComponent = () => {
 
     fetchComplaints();
   }, [searchTerm, categoryFilter, statusFilter]);
+
+  if (!isClient) {
+    return <div className="container mx-auto py-8 px-4">Loading...</div>;
+  }
 
   return (
     <div className="container mx-auto py-8 px-4">

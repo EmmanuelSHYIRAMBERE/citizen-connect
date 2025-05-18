@@ -14,7 +14,7 @@ const AgencyDashboardComponent = async () => {
 
       {/* Stats Overview */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <AnimatedCard>
+        <AnimatedCard className="bg-blue-500">
           <StatsCounter
             endValue={125}
             title={t("Complaints.status.submitted")}
@@ -22,7 +22,7 @@ const AgencyDashboardComponent = async () => {
             color="bg-blue-100"
           />
         </AnimatedCard>
-        <AnimatedCard delay={0.2}>
+        <AnimatedCard delay={0.2} className="bg-yellow-500">
           <StatsCounter
             endValue={89}
             title={t("Complaints.status.inProgress")}
@@ -30,7 +30,7 @@ const AgencyDashboardComponent = async () => {
             color="bg-yellow-100"
           />
         </AnimatedCard>
-        <AnimatedCard delay={0.4}>
+        <AnimatedCard delay={0.4} className="bg-green-500">
           <StatsCounter
             endValue={42}
             title={t("Complaints.status.resolved")}

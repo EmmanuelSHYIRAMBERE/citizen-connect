@@ -18,9 +18,12 @@ export function UserButton() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
+      <DropdownMenuTrigger
+        asChild
+        className="shadow hover:bg-blue-500 bg-green-500 rounded-full"
+      >
         <Button variant="ghost" className="relative h-8 w-8 rounded-full">
-          <User className="h-4 w-4" />
+          <User className="h-[1.2rem] w-[1.2rem]" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent
