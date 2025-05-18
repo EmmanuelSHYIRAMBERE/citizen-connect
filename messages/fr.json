@@ -1,0 +1,275 @@
+{
+  "Header": {
+    "Hello": "Bonjour",
+    "sign in": "se connecter",
+    "All": "Tout",
+    "Gold": "Or",
+    "Green": "Vert",
+    "Red": "Rouge",
+    "Sign up": "S'inscrire",
+    "Sign in": "Se connecter",
+    "Sign out": "Se déconnecter",
+    "Admin": "Admin",
+    "Your account": "Votre compte",
+    "Help & Settings": "Aide et paramètres",
+    "Search Site": "Rechercher {name}",
+    "Dark": "Sombre",
+    "Light": "Clair",
+    "Color": "Couleur",
+    "Browsing History": "Historique de navigation",
+    "Customer Service": "Service client",
+    "About Us": "À propos de nous",
+    "Help": "Aide",
+    "Site Menu": "Menu du site"
+  },
+  "Footer": {
+    "aboutTitle": "À propos de nous",
+    "aboutDescription": "Plateforme de participation citoyenne pour signaler les problèmes et suivre leur résolution",
+    "quickLinks": "Liens rapides",
+    "connect": "Connectez-vous avec nous",
+    "allRightsReserved": "Tous droits réservés",
+    "Complaints": {
+      "publicDashboard": "Tableau de bord des réclamations publiques"
+    },
+    "About": {
+      "title": "À propos du système"
+    },
+    "Contact": {
+      "title": "Contactez-nous"
+    }
+  },
+  "Complaints": {
+    "publicDashboard": "Tableau de Bord des Réclamations Publiques",
+    "publicDashboardDescription": "Consultez et suivez toutes les réclamations publiques dans notre système",
+    "resetFilters": "Réinitialiser les Filtres",
+    "submitComplaint": "Soumettre une plainte",
+    "noComplaintsFound": "Aucune réclamation trouvée",
+    "allCategories": "Toutes les Catégories",
+    "allStatuses": "Tous les Statuts",
+    "addNew": "Ajouter une Nouvelle Réclamation",
+    "filterByCategory": "Filtrer par catégorie",
+    "filterByStatus": "Filtrer par statut",
+    "refresh": "Actualiser",
+    "searchPlaceholder": "Rechercher des réclamations...",
+    "title": "Titre",
+    "steps": {
+      "details": "Détails de la plainte",
+      "location": "Localisation",
+      "review": "Examen",
+      "confirmation": "Confirmation"
+    },
+    "categories": {
+      "infrastructure": "Infrastructure",
+      "sanitation": "Assainissement",
+      "transportation": "Transport",
+      "safety": "Sécurité publique",
+      "noise": "Pollution sonore",
+      "other": "Autre"
+    },
+    "status": {
+      "SUBMITTED": "Soumis",
+      "IN_REVIEW": "En examen",
+      "UNDER_REVIEW": "En examen",
+      "IN_PROGRESS": "En cours",
+      "RESOLVED": "Résolu",
+      "REJECTED": "Rejeté"
+    },
+    "form": {
+      "title": "Titre",
+      "description": "Description",
+      "category": "Catégorie",
+      "location": "Localisation",
+      "attachments": "Pièces jointes",
+      "submit": "Soumettre la plainte",
+      "next": "Suivant",
+      "back": "Retour"
+    },
+    "loadingMap": "Chargement de la carte",
+    "mapView": "Vue de la carte"
+  },
+  "Home": {
+    "welcome": "Portail d'engagement citoyen",
+    "description": "Votre voix compte. Signalez des problèmes, suivez les progrès et engagez-vous avec votre gouvernement.",
+    "stats": {
+      "complaints": "Plaintes soumises",
+      "resolved": "Problèmes résolus",
+      "departments": "Départements gouvernementaux"
+    },
+    "recentComplaints": "Problèmes récemment signalés",
+    "viewAll": "Voir toutes les plaintes",
+    "submitComplaint": "Soumettre une plainte"
+  },
+
+  "About": {
+    "title": "À Propos de Notre Système d'Engagement Citoyen",
+    "description": "Une plateforme conçue pour combler le fossé entre les citoyens et le gouvernement grâce à une communication transparente et une résolution efficace des problèmes.",
+    "features": {
+      "transparency": {
+        "title": "Transparence",
+        "description": "Toutes les réclamations et résolutions sont visibles publiquement pour assurer la responsabilité."
+      },
+      "efficiency": {
+        "title": "Efficacité",
+        "description": "Processus rationalisés pour des temps de réponse et de résolution rapides."
+      },
+      "accountability": {
+        "title": "Responsabilité",
+        "description": "Suivez chaque étape du parcours de votre réclamation dans notre système."
+      },
+      "engagement": {
+        "title": "Engagement Communautaire",
+        "description": "Participez à l'amélioration de votre communauté en signalant les problèmes qui comptent."
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça Marche",
+      "step1": {
+        "title": "Soumettre une Réclamation",
+        "description": "Signalez un problème via notre formulaire en ligne simple avec tous les détails nécessaires."
+      },
+      "step2": {
+        "title": "Processus d'Examen",
+        "description": "Notre équipe vérifie et catégorise votre réclamation pour une action appropriée."
+      },
+      "step3": {
+        "title": "Résolution en Cours",
+        "description": "Le département responsable travaille à la résolution de votre problème signalé."
+      },
+      "step4": {
+        "title": "Problème Résolu",
+        "description": "Vous serez notifié lorsque votre réclamation aura été résolue avec succès."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contactez-Nous",
+    "description": "Vous avez des questions ou besoin d'aide ? Contactez notre équipe en utilisant le formulaire ci-dessous.",
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "department": "Département",
+      "message": "Votre Message",
+      "submit": "Envoyer le Message",
+      "submitting": "Envoi en Cours..."
+    },
+    "departments": {
+      "general": "Demande Générale",
+      "technical": "Support Technique",
+      "complaints": "Département des Réclamations",
+      "feedback": "Retour d'Information & Suggestions"
+    },
+    "successMessage": "Votre message a été envoyé avec succès !",
+    "errorMessage": "Échec de l'envoi de votre message. Veuillez réessayer.",
+    "contactInfo": {
+      "title": "Informations de Contact",
+      "address": {
+        "title": "Adresse",
+        "line1": "Bureau d'Engagement Citoyen",
+        "line2": "KG 7 Ave, Kigali, Rwanda"
+      },
+      "phone": "Numéro de Téléphone",
+      "email": "Adresse Email",
+      "hours": {
+        "title": "Heures d'Ouverture",
+        "weekdays": "Lundi - Vendredi: 8:00 AM - 5:00 PM",
+        "weekends": "Samedi: 9:00 AM - 1:00 PM"
+      }
+    }
+  },
+  "Admin": {
+    "Users": {
+      "title": "Gestion des Utilisateurs",
+      "addNew": "Ajouter un Nouvel Utilisateur",
+      "searchPlaceholder": "Rechercher des utilisateurs...",
+      "filterByRole": "Filtrer par rôle",
+      "allRoles": "Tous les Rôles",
+      "roles": {
+        "citizen": "Citoyen",
+        "agency": "Agence Gouvernementale",
+        "admin": "Administrateur"
+      },
+      "refresh": "Actualiser",
+      "noUsersFound": "Aucun utilisateur trouvé"
+    },
+    "Complaints": {
+      "title": "Gestion des Réclamations",
+      "addNew": "Ajouter une Nouvelle Réclamation",
+      "searchPlaceholder": "Rechercher des réclamations...",
+      "filterByStatus": "Filtrer par statut",
+      "filterByCategory": "Filtrer par catégorie",
+      "allStatuses": "Tous les Statuts",
+      "allCategories": "Toutes les Catégories",
+      "refresh": "Actualiser",
+      "noComplaintsFound": "Aucune réclamation trouvée",
+      "status": {
+        "submitted": "Soumis",
+        "inReview": "En Examen",
+        "inProgress": "En Cours",
+        "resolved": "Résolu",
+        "rejected": "Rejeté"
+      }
+    },
+    "Departments": {
+      "title": "Gestion des Départements",
+      "addNew": "Ajouter un Nouveau Département",
+      "searchPlaceholder": "Rechercher des départements...",
+      "refresh": "Actualiser",
+      "noDepartmentsFound": "Aucun département trouvé"
+    }
+  },
+  "Citizen": {
+    "Profile": {
+      "title": "Mon Profil",
+      "backToDashboard": "Retour au Tableau de Bord",
+      "updateSuccess": "Profil mis à jour avec succès !",
+      "updateError": "Échec de la mise à jour du profil. Veuillez réessayer.",
+      "form": {
+        "name": "Nom Complet",
+        "email": "Adresse Email",
+        "emailNote": "Contactez le support pour changer votre adresse email",
+        "phone": "Numéro de Téléphone",
+        "address": "Adresse Physique",
+        "submit": "Enregistrer les Modifications",
+        "submitting": "Enregistrement..."
+      }
+    },
+    "dashboard": "Votre Tableau de Bord",
+    "stats": {
+      "submitted": "Soumis",
+      "inProgress": "En Cours",
+      "resolved": "Résolu"
+    },
+    "resolutionRate": "Taux de Résolution",
+    "recentComplaints": "Réclamations Récentes",
+    "viewAll": "Voir Tout",
+    "noComplaints": "Vous n'avez soumis aucune réclamation",
+    "quickActions": "Actions Rapides",
+    "submitNewComplaint": "Soumettre une Nouvelle Réclamation",
+    "updateProfile": "Mettre à Jour le Profil"
+  },
+  "Loading": {
+    "Loading": "Chargement..."
+  },
+  "Error": {
+    "Error": "Erreur",
+    "Try again": "Essayez encore",
+    "Back To Home": "Retourner à la page d'accueil"
+  },
+  "toggleTheme": "Changer de Thème",
+  "theme": {
+    "light": "Lumière",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "toggleLanguage": "Changer de Langue",
+  "language": {
+    "en-US": "Anglais",
+    "fr": "Français",
+    "rw": "Kinyarwanda"
+  },
+  "notifications": "Avis",
+  "viewAllNotifications": "Afficher toutes les Notifications",
+  "form": {
+    "submitSuccess": "Votre réclamation a été soumise avec succès !"
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "Header": {
+    "Hello": "Hello",
+    "sign in": "sign in",
+    "All": "All",
+    "Gold": "Gold",
+    "Green": "Green",
+    "Red": "Red",
+    "Sign up": "Sign up",
+    "Sign in": "Sign in",
+    "Sign out": "Sign out",
+    "Admin": "Admin",
+    "Your account": "Your account",
+    "Help & Settings": "Help & Settings",
+    "Search Site": "Search {name}",
+    "Dark": "Dark",
+    "Light": "Light",
+    "Color": "Color",
+    "Browsing History": "Browsing History",
+    "Customer Service": "Customer Service",
+    "About Us": "About Us",
+    "Help": "Help",
+    "Site Menu": "Site Menu"
+  },
+  "Footer": {
+    "aboutTitle": "About Us",
+    "aboutDescription": "Description about your platform",
+    "quickLinks": "Quick Links",
+    "connect": "Connect With Us",
+    "allRightsReserved": "All rights reserved",
+    "Complaints": {
+      "publicDashboard": "Public Complaints Dashboard"
+    },
+    "About": {
+      "title": "About Our System"
+    },
+    "Contact": {
+      "title": "Contact Us"
+    }
+  },
+  "Complaints": {
+    "publicDashboard": "Public Complaints Dashboard",
+    "publicDashboardDescription": "View and track all public complaints in our system",
+    "resetFilters": "Reset Filters",
+    "submitComplaint": "Submit a Complaint",
+    "noComplaintsFound": "No complaints found",
+    "allCategories": "All Categories",
+    "allStatuses": "All Statuses",
+    "searchPlaceholder": "Search complaints...",
+    "addNew": "Add New Complaint",
+    "filterByCategory": "Filter by category",
+    "filterByStatus": "Filter by status",
+    "refresh": "Refresh",
+    "title": "Title",
+    "steps": {
+      "details": "Complaint Details",
+      "location": "Location",
+      "review": "Review",
+      "confirmation": "Confirmation"
+    },
+    "category": "Category",
+    "categories": {
+      "infrastructure": "Infrastructure",
+      "sanitation": "Sanitation",
+      "transportation": "Transportation",
+      "safety": "Public Safety",
+      "noise": "Noise Pollution",
+      "other": "Other"
+    },
+    "status": {
+      "SUBMITTED": "Submitted",
+      "IN_REVIEW": "In Review",
+      "UNDER_REVIEW": "Under Review",
+      "IN_PROGRESS": "In Progress",
+      "RESOLVED": "Resolved",
+      "REJECTED": "Rejected"
+    },
+    "form": {
+      "title": "Title",
+      "description": "Description",
+      "category": "Category",
+      "location": "Location",
+      "attachments": "Attachments",
+      "submit": "Submit Complaint",
+      "next": "Next",
+      "back": "Back"
+    },
+    "loadingMap": "Loading map...",
+    "mapView": "Map View"
+  },
+  "Home": {
+    "welcome": "Citizen Engagement Portal",
+    "description": "Your voice matters. Report issues, track progress, and engage with your government.",
+    "stats": {
+      "complaints": "Complaints Submitted",
+      "resolved": "Resolved Issues",
+      "departments": "Government Departments"
+    },
+    "recentComplaints": "Recently Reported Issues",
+    "viewAll": "View All Complaints",
+    "submitComplaint": "Submit a Complaint"
+  },
+  "About": {
+    "title": "About Our Citizen Engagement System",
+    "description": "A platform designed to bridge the gap between citizens and government through transparent communication and efficient issue resolution.",
+    "features": {
+      "transparency": {
+        "title": "Transparency",
+        "description": "All complaints and resolutions are publicly visible to ensure accountability."
+      },
+      "efficiency": {
+        "title": "Efficiency",
+        "description": "Streamlined processes for quick response and resolution times."
+      },
+      "accountability": {
+        "title": "Accountability",
+        "description": "Track every step of your complaint's journey through our system."
+      },
+      "engagement": {
+        "title": "Community Engagement",
+        "description": "Participate in improving your community by reporting issues that matter."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Submit a Complaint",
+        "description": "Report an issue through our simple online form with all necessary details."
+      },
+      "step2": {
+        "title": "Review Process",
+        "description": "Our team verifies and categorizes your complaint for appropriate action."
+      },
+      "step3": {
+        "title": "Resolution in Progress",
+        "description": "The responsible department works on resolving your reported issue."
+      },
+      "step4": {
+        "title": "Issue Resolved",
+        "description": "You'll be notified when your complaint has been successfully resolved."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "Have questions or need assistance? Reach out to our team using the form below.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "department": "Department",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "submitting": "Sending..."
+    },
+    "departments": {
+      "general": "General Inquiry",
+      "technical": "Technical Support",
+      "complaints": "Complaints Department",
+      "feedback": "Feedback & Suggestions"
+    },
+    "successMessage": "Your message has been sent successfully!",
+    "errorMessage": "Failed to send your message. Please try again.",
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Address",
+        "line1": "Citizen Engagement Office",
+        "line2": "KG 7 Ave, Kigali, Rwanda"
+      },
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "hours": {
+        "title": "Working Hours",
+        "weekdays": "Monday - Friday: 8:00 AM - 5:00 PM",
+        "weekends": "Saturday: 9:00 AM - 1:00 PM"
+      }
+    }
+  },
+  "Admin": {
+    "Users": {
+      "title": "User Management",
+      "addNew": "Add New User",
+      "searchPlaceholder": "Search users...",
+      "filterByRole": "Filter by role",
+      "allRoles": "All Roles",
+      "roles": {
+        "citizen": "Citizen",
+        "agency": "Government Agency",
+        "admin": "Administrator"
+      },
+      "refresh": "Refresh",
+      "noUsersFound": "No users found"
+    },
+    "Complaints": {
+      "title": "Complaints Management",
+      "addNew": "Add New Complaint",
+      "searchPlaceholder": "Search complaints...",
+      "filterByStatus": "Filter by status",
+      "filterByCategory": "Filter by category",
+      "allStatuses": "All Statuses",
+      "allCategories": "All Categories",
+      "noComplaintsFound": "No complaints found",
+      "refresh": "Refresh",
+      "status": {
+        "submitted": "Submitted",
+        "inReview": "In Review",
+        "inProgress": "In Progress",
+        "resolved": "Resolved",
+        "rejected": "Rejected"
+      },
+      "totalComplaints": "Total Complaints",
+      "resolvedComplaints": "Resolved Complaints",
+      "inProgress": "In Progress Complaints",
+      "complaintsByMonth": "Complaints by Month",
+      "complaintsByCategory": "Complaints by Category",
+      "byDepartment": "Complaints by Department",
+      "recentActivity": "Recent Activity"
+    },
+    "Departments": {
+      "title": "Department Management",
+      "addNew": "Add New Department",
+      "searchPlaceholder": "Search departments...",
+      "refresh": "Refresh",
+      "noDepartmentsFound": "No departments found"
+    }
+  },
+  "Citizen": {
+    "dashboard": "Your Dashboard",
+    "stats": {
+      "submitted": "Submitted",
+      "inProgress": "In Progress",
+      "resolved": "Resolved"
+    },
+
+    "Profile": {
+      "title": "My Profile",
+      "backToDashboard": "Back to Dashboard",
+      "updateSuccess": "Profile updated successfully!",
+      "updateError": "Failed to update profile. Please try again.",
+      "form": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "emailNote": "Contact support to change your email address",
+        "phone": "Phone Number",
+        "address": "Physical Address",
+        "submit": "Save Changes",
+        "submitting": "Saving..."
+      }
+    },
+    "resolutionRate": "Resolution Rate",
+    "recentComplaints": "Recent Complaints",
+    "viewAll": "View All",
+    "noComplaints": "You haven't submitted any complaints yet",
+    "quickActions": "Quick Actions",
+    "submitNewComplaint": "Submit New Complaint",
+    "updateProfile": "Update Profile"
+  },
+  "Loading": {
+    "Loading": "Loading..."
+  },
+  "Error": {
+    "Error": "Error",
+    "Try again": "Try again",
+    "Back To Home": "Back To Home"
+  },
+  "toggleTheme": "Toggle theme",
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "toggleLanguage": "Toggle language",
+  "language": {
+    "en-US": "English",
+    "fr": "Français",
+    "rw": "Kinyarwanda"
+  },
+  "notifications": "Notifications",
+  "viewAllNotifications": "View all notifications",
+  "form": {
+    "submitSuccess": "Your complaint has been submitted successfully!"
+  }
+}
