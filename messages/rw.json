@@ -90,8 +90,8 @@
     "mapView": "Kureba ikarita"
   },
   "Home": {
-    "welcome": "Porotokoli y'Abaturage",
-    "description": "Ijwi ryawe rifite agaciro. Tanga ibibazo, urebe iterambere, unahuze n'ubutegetsi.",
+    "welcome": "Urubuga rwo guhuza abaturage n'ubutegetsi",
+    "description": "Ijwi ryawe rifite akamaro. Tanga ibibazo, ukurikirane iterambere, kandi wifatanye na leta yawe.",
     "stats": {
       "complaints": "Ibirego Byatanzwe",
       "resolved": "Ibibazo Byakemuwe",
@@ -277,11 +277,11 @@
   "Chatbot": {
     "title": "Umufasha w'abaturage",
     "welcome_message": "Twabasuhuje! Nigute nshobora kugufasha uyu munsi?",
-    "error_message": "Mwihangane, Habye ikosa. Nyamuneka gerageza nanone.",
+    "error_message": "Mwihangane, Habaye ikosa. Nyamuneka gerageza nanone.",
     "typing": "Kwandika ...",
     "input_placeholder": "Andika igitekerezo cyawe hano ...",
     "send": "Ohereza",
-    "ask_ai": "BAZA AI",
+    "ask_ai": "Mbaza Ngufashe",
     "close": "funga ikiganiro",
     "complaint_redirect_message": "Ndashobora kugufasha mubibazo. Urashaka:",
     "new_complaint": "Tanga Ikirego gishya",
