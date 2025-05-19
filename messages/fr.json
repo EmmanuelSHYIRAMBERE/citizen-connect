@@ -39,6 +39,7 @@
     }
   },
   "Complaints": {
+    "viewDetails": "Voir les Détails",
     "publicDashboard": "Tableau de Bord des Réclamations Publiques",
     "publicDashboardDescription": "Consultez et suivez toutes les réclamations publiques dans notre système",
     "resetFilters": "Réinitialiser les Filtres",

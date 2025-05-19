@@ -39,6 +39,7 @@
     }
   },
   "Complaints": {
+    "viewDetails": "Reba kandi ugendeye",
     "publicDashboard": "Ikibaho cy'Ibirego",
     "publicDashboardDescription": "Reba kandi ugendeye ku birego byose bisanzwe muri sisitemu yacu",
     "resetFilters": "Ongera usubize Imyuzuro",

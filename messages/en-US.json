@@ -39,6 +39,7 @@
     }
   },
   "Complaints": {
+    "viewDetails": "View Details",
     "publicDashboard": "Complaints",
     "publicDashboardDescription": "View and track all public complaints in our system",
     "resetFilters": "Reset Filters",
