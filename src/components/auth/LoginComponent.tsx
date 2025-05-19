@@ -95,8 +95,20 @@ const LoginComponent = () => {
         type: "loading",
       });
 
+      let callbackUrl = "/login";
+      const session = await getSession();
+      const role = session?.user?.role;
+
+      if (role === "ADMIN") {
+        callbackUrl = "/admin/dashboard";
+      } else if (role === "AGENCY") {
+        callbackUrl = "/agency/dashboard";
+      } else {
+        callbackUrl = "/citizen/dashboard";
+      }
+
       const result = await signIn("google", {
-        callbackUrl: "/dashboard",
+        callbackUrl: callbackUrl,
         redirect: false,
       });
 
