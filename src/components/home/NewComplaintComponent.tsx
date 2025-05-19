@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import WizardForm from "@/components/wizard/WizardForm";
-import StepIndicator from "@/components/wizard/StepIndicator";
 import ComplaintForm from "@/components/complaints/ComplaintForm";
 import LocationStep from "@/components/complaints/LocationStep";
 import ReviewStep from "@/components/complaints/ReviewStep";
@@ -80,12 +79,11 @@ const NewComplaintComponent = () => {
             {t("submitComplaint")}
           </Motion.h1>
 
-          <StepIndicator
-            steps={steps.map((step) => t(`steps.${step}`))}
-            currentStep={currentStep}
-          />
-
-          <WizardForm steps={steps} onSubmit={handleSubmit}>
+          <WizardForm
+            steps={steps}
+            onSubmit={handleSubmit}
+            currentStepReady={currentStep}
+          >
             <ComplaintForm />
             <LocationStep
               initialData={formData}

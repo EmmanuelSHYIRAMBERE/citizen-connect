@@ -9,13 +9,15 @@ export default function WizardForm({
   steps,
   children,
   onSubmit,
+  currentStepReady,
 }: {
   steps: string[];
   children: ReactNode[];
   onSubmit: () => void;
+  currentStepReady?: number;
 }) {
   const t = useTranslations("Complaints.form");
-  const [currentStep, setCurrentStep] = useState(0);
+  const [currentStep, setCurrentStep] = useState(currentStepReady || 0);
 
   const nextStep = () => {
     if (currentStep < steps.length - 1) {
@@ -46,11 +48,19 @@ export default function WizardForm({
         </Button>
 
         {currentStep < steps.length - 1 ? (
-          <Button type="button" onClick={nextStep}>
+          <Button
+            type="button"
+            onClick={nextStep}
+            className="bg-yellow-500 shadow shadow-black"
+          >
             {t("next")}
           </Button>
         ) : (
-          <Button type="button" onClick={onSubmit}>
+          <Button
+            type="button"
+            onClick={onSubmit}
+            className="bg-yellow-500 shadow shadow-black"
+          >
             {t("submit")}
           </Button>
         )}

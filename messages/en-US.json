@@ -29,7 +29,7 @@
     "connect": "Connect With Us",
     "allRightsReserved": "All rights reserved",
     "Complaints": {
-      "publicDashboard": "Public Complaints Dashboard"
+      "publicDashboard": "Complaints"
     },
     "About": {
       "title": "About Our System"
@@ -39,7 +39,7 @@
     }
   },
   "Complaints": {
-    "publicDashboard": "Public Complaints Dashboard",
+    "publicDashboard": "Complaints",
     "publicDashboardDescription": "View and track all public complaints in our system",
     "resetFilters": "Reset Filters",
     "submitComplaint": "Submit a Complaint",
@@ -86,7 +86,8 @@
       "back": "Back"
     },
     "loadingMap": "Loading map...",
-    "mapView": "Map View"
+    "mapView": "Map View",
+    "complaintNotFound": "Complaint not found"
   },
   "Home": {
     "welcome": "Citizen Engagement Portal",
@@ -101,7 +102,7 @@
     "submitComplaint": "Submit a Complaint"
   },
   "About": {
-    "title": "About Our Citizen Engagement System",
+    "title": "About Us",
     "description": "A platform designed to bridge the gap between citizens and government through transparent communication and efficient issue resolution.",
     "features": {
       "transparency": {

@@ -58,7 +58,11 @@ const LocationStep = ({ initialData, onNext, onBack }: LocationStepProps) => {
         <Button variant="outline" onClick={onBack}>
           {t("form.back")}
         </Button>
-        <Button onClick={handleSubmit} disabled={!location}>
+        <Button
+          onClick={handleSubmit}
+          disabled={!location}
+          className="bg-yellow-500 shadow shadow-black"
+        >
           {t("form.next")}
         </Button>
       </div>

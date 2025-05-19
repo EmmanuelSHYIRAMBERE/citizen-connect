@@ -123,7 +123,7 @@
     K[AI Services] --> L[Complaint Analysis]
     L --> M[Department Routing]
     
-    N[WebSockets] --> O[Real-time Updates]
+    N[Pusher] --> O[Real-time Updates]
     
     P[Tailwind CSS] --> Q[Responsive UI]
     Q --> R[Animations]
@@ -137,7 +137,7 @@
 - **Backend**: Next.js API Routes, MongoDB, Prisma ORM
 - **Authentication**: NextAuth.js with role-based access control
 - **AI Components**: Natural Language Processing for complaint routing
-- **Real-time**: WebSockets for live updates and notifications
+- **Real-time**: Pusher for live updates and notifications
 - **Internationalization**: i18n with support for EN/FR/RW
 
 ## 📊 Project Structure
@@ -160,6 +160,7 @@ src/app/
 │   │   ├── contact/
 │   │   │   └── page.tsx              # Contact information
 │   │   └── page.tsx                  # Homepage
+│   │   └── layout.tsx
 │   ├── (admin)/
 │   │   ├── admin/
 │   │   │   ├── dashboard/
@@ -237,21 +238,13 @@ components/
 │   ├── LoadingSkeleton.tsx
 │   └── ThemeToggle.tsx
 └── wizard/                           # Multi-step form components
-    ├── StepIndicator.tsx
-    ├── WizardForm.tsx
-    └── WizardStep.tsx
+│    ├── StepIndicator.tsx
+│    ├── WizardForm.tsx
+│    └── WizardStep.tsx
 └── chatbot/
     ├── Chatbot.tsx                   # Main component
     ├── ChatMessage.tsx               # Message component
     └── ChatInput.tsx                 # Input with lang detection
-├── hooks/
-│   ├── useChatHistory.ts             # Local storage management
-│   └── useLanguageDetection.ts
-├── animations/                       # Framer Motion presets
-├── services/
-│   ├── AIService.ts                  # API calls
-│   └── TranslationService.ts
-└── types/
 ```
 
 </details>

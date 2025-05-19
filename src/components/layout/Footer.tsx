@@ -65,10 +65,12 @@ export default function Footer() {
       className="bg-gradient-to-b from-blue-700 to-blue-900 text-white"
     >
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {/* About Section */}
           <Motion.div variants={itemVariants} className="md:col-span-1">
-            <h3 className="text-2xl font-bold mb-4">{t("aboutTitle")}</h3>
+            <h3 className="text-2xl text-yellow-500 font-bold mb-4">
+              {t("aboutTitle")}
+            </h3>
             <p className="text-blue-100 mb-4">{t("aboutDescription")}</p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -90,7 +92,9 @@ export default function Footer() {
           {/* Links Sections */}
           {footerLinks.map((column, index) => (
             <Motion.div key={index} variants={itemVariants}>
-              <h4 className="text-xl font-semibold mb-4">{column.title}</h4>
+              <h4 className="text-xl text-green-500  font-semibold mb-4">
+                {column.title}
+              </h4>
               <ul className="space-y-2">
                 {column.links.map((link, linkIndex) => (
                   <Motion.li
@@ -112,7 +116,9 @@ export default function Footer() {
 
           {/* Newsletter */}
           <Motion.div variants={itemVariants}>
-            <h4 className="text-xl font-semibold mb-4">{t("connect")}</h4>
+            <h4 className="text-xl text-yellow-500  font-semibold mb-4">
+              {t("connect")}
+            </h4>
             <p className="text-blue-100 mb-4">
               Subscribe to our newsletter for updates
             </p>
@@ -120,7 +126,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 px-4 py-2 rounded-l-lg bg-blue-800 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                className="flex-1 px-1 lg:px-4 py-2 rounded-l-lg border border-green-500 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
               />
               <button className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-medium px-4 py-2 rounded-r-lg transition-colors">
                 Subscribe

@@ -86,7 +86,8 @@
       "back": "Retour"
     },
     "loadingMap": "Chargement de la carte",
-    "mapView": "Vue de la carte"
+    "mapView": "Vue de la carte",
+    "complaintNotFound": "Plainte non trouvée"
   },
   "Home": {
     "welcome": "Portail d'engagement citoyen",
@@ -102,7 +103,7 @@
   },
 
   "About": {
-    "title": "À Propos de Notre Système d'Engagement Citoyen",
+    "title": "À propos du système",
     "description": "Une plateforme conçue pour combler le fossé entre les citoyens et le gouvernement grâce à une communication transparente et une résolution efficace des problèmes.",
     "features": {
       "transparency": {
