@@ -264,7 +264,7 @@ export default function RegisterComponent() {
   return (
     <div className="max-w-md mx-auto px-8 py-16 bg-white rounded-xl shadow-lg mt-2.5">
       <div className="flex items-center justify-between mb-8">
-        <h1 className="flex items-center justify-center text-3xl font-bold text-red-900 w-full">
+        <h1 className="flex items-center justify-center text-3xl font-bold text-yellow-500 w-full">
           CitizenConnect
         </h1>
       </div>

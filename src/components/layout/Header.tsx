@@ -57,7 +57,7 @@ export default function Header() {
             className="flex items-center"
           >
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-xl font-bold text-white">
+              <span className="text-xl font-bold text-yellow-500">
                 CitizenConnect
               </span>
             </Link>
@@ -68,7 +68,7 @@ export default function Header() {
             variants={navVariants}
             initial="hidden"
             animate="visible"
-            className="hidden md:flex items-center space-x-1"
+            className="hidden lg:flex items-center space-x-1"
           >
             {navItems.map((item) => (
               <Motion.div key={item.href} variants={navItemVariants}>
@@ -79,7 +79,7 @@ export default function Header() {
                     ${
                       pathname === item.href
                         ? "text-green-400 bg-blue-700"
-                        : "text-white hover:text-yellow-300 hover:bg-blue-500/50"
+                        : "text-white bg-green-500 hover:text-yellow-300 hover:bg-blue-500/50"
                     }
                     transition-all duration-300
                   `}
@@ -103,7 +103,7 @@ export default function Header() {
 
           {/* Right side controls */}
           <div className="flex items-center space-x-3">
-            <div className="hidden md:block w-64">
+            <div className="hidden lg:block w-64">
               <Input
                 type="search"
                 placeholder={t("Complaints.searchPlaceholder")}
@@ -118,7 +118,7 @@ export default function Header() {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2 rounded-full text-white hover:bg-blue-500 focus:outline-none"
+              className="lg:hidden p-2 rounded-full text-white hover:bg-blue-500 focus:outline-none"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -134,7 +134,7 @@ export default function Header() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden pb-4 space-y-2"
+              className="lg:hidden pb-4 space-y-2"
             >
               {navItems.map((item) => (
                 <Link
@@ -145,7 +145,7 @@ export default function Header() {
                     ${
                       pathname === item.href
                         ? "bg-blue-700 text-green-400"
-                        : "text-white hover:bg-blue-500/50"
+                        : "text-white bg-green-500 hover:text-yellow-300 hover:bg-blue-500/50"
                     }
                   `}
                   onClick={() => setMobileMenuOpen(false)}

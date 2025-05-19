@@ -87,7 +87,8 @@
       "back": "Subira inyuma"
     },
     "loadingMap": "Iyubaka ikarita...",
-    "mapView": "Kureba ikarita"
+    "mapView": "Kureba ikarita",
+    "complaintNotFound": "Ikirego nticyabonetse"
   },
   "Home": {
     "welcome": "Urubuga rwo guhuza abaturage n'ubutegetsi",
@@ -103,7 +104,7 @@
   },
 
   "About": {
-    "title": "Ibyerekeye Sisitemu y'Ubufatanye n'Abaturage",
+    "title": "Ibitwerekeye",
     "description": "Porogaramu yateguwe guhuza abaturage n'ubutegetsi binyuze mu mvugo isobanutse no gukemura ibibazo vuba.",
     "features": {
       "transparency": {

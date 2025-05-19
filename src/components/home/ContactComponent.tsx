@@ -177,7 +177,7 @@ const ContactComponent = () => {
 
             <div>
               <h3 className="font-semibold mb-2">{t("contactInfo.phone")}</h3>
-              <p className="text-gray-600">+250 788 123 456</p>
+              <p className="text-gray-600">+(250) 123 456 789</p>
             </div>
 
             <div>

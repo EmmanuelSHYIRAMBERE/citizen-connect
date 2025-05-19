@@ -25,8 +25,8 @@ export default function StepIndicator({
             {index + 1}
           </div>
           <div
-            className={`ml-2 ${
-              index <= currentStep ? "font-semibold" : "text-gray-500"
+            className={`ml-1 ${
+              index <= currentStep ? "font-sm" : "text-gray-500"
             }`}
           >
             {t(step as string)}

@@ -126,7 +126,10 @@ export default function ComplaintForm() {
             )}
           />
 
-          <Button type="submit" className="w-full">
+          <Button
+            type="submit"
+            className="w-full text-white bg-green-500 hover:text-yellow-500 hover:bg-blue-500 shadow shadow-black"
+          >
             {t("submit")}
           </Button>
         </form>

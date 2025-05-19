@@ -62,7 +62,9 @@ const AdminSidebar = () => {
             <Expand className="w-6 h-6 mx-auto" />
           ) : (
             <span className="flex items-center justify-between">
-              <span className="font-semibold">CitizenConnect</span>
+              <span className="font-semibold text-yellow-500">
+                CitizenConnect
+              </span>
               <ListCollapseIcon className="w-6 h-6" />
             </span>
           )}
