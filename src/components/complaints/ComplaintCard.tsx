@@ -1,76 +1,85 @@
 "use client";
 
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-import ComplaintStatus from "./ComplaintStatus";
 import { Complaint } from "@/types/complaint.types";
-import { Motion } from "../animations/MotionWrapper";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { useTranslations } from "next-intl";
+import { formatDate } from "@/lib/utils";
+import { Eye, MessageSquare, ThumbsUp } from "lucide-react";
+import ComplaintDetailsComponent from "../home/ComplaintDetailsComponent";
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-  hover: {
-    y: -5,
-    boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
-    transition: {
-      duration: 0.2,
-    },
-  },
-};
-
-export function ComplaintCard({
-  complaint,
-  index,
-}: {
+interface ComplaintCardProps {
   complaint: Complaint;
   index: number;
-}) {
+}
+
+const ComplaintCard = ({ complaint }: ComplaintCardProps) => {
   const t = useTranslations("Complaints");
 
-  // Generate background color based on complaint index for three colors: Blue, Yellow, and Green
-  const backgroundColors = ["bg-blue-300", "bg-yellow-300", "bg-green-300"];
-  const backgroundColor = backgroundColors[index % backgroundColors.length];
-
   return (
-    <Motion.div
-      variants={cardVariants}
-      initial="hidden"
-      animate="visible"
-      whileHover="hover"
-      transition={{ delay: index * 0.1 }}
-      className={`${backgroundColor} rounded-lg shadow-md overflow-hidden border border-gray-100`}
-    >
-      <Link href={`/complaints/${complaint.id}`} className="block p-6">
-        <div className="flex justify-between items-start">
-          <div>
-            <h3 className="text-lg font-medium text-gray-900 mb-1">
-              {complaint.title}
-            </h3>
-            <p className="text-gray-600 text-sm line-clamp-2 mb-3">
-              {complaint.description}
-            </p>
-          </div>
-          <ComplaintStatus status={complaint.status} />
+    <div className="border rounded-lg p-4 hover:shadow-md transition-shadow">
+      <div className="flex justify-between items-start">
+        <div>
+          <h3 className="font-medium text-lg">{complaint.title}</h3>
+          <p className="text-sm text-gray-600 line-clamp-2">
+            {complaint.description}
+          </p>
+        </div>
+        <Badge className={` capitalize`}>
+          {t(`status.${complaint.status}`)}
+        </Badge>
+      </div>
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        <Badge variant="outline">{complaint.category}</Badge>
+        {complaint.tags?.map((tag) => (
+          <Badge key={tag} variant="secondary">
+            {tag}
+          </Badge>
+        ))}
+      </div>
+
+      <div className="mt-4 flex items-center justify-between">
+        <div className="text-sm text-gray-500">
+          {formatDate(complaint.createdAt)}
         </div>
 
-        <div className="flex items-center justify-between mt-4">
-          <div className="flex items-center space-x-2">
-            <span className="text-xs text-gray-500">
-              {t("category")}: {t(`categories.${complaint.category}`)}
-            </span>
-          </div>
-          <span className="text-xs text-gray-500">
-            {new Date(complaint.createdAt).toLocaleDateString()}
-          </span>
+        <div className="flex items-center gap-2">
+          <Button variant="ghost" size="sm" className="text-gray-500">
+            <ThumbsUp className="h-4 w-4 mr-1" />
+            {complaint.upvoteCount || 0}
+          </Button>
+
+          <Button variant="ghost" size="sm" className="text-gray-500">
+            <MessageSquare className="h-4 w-4 mr-1" />
+            {complaint.updates?.length || 0}
+          </Button>
+
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" size="sm">
+                <Eye className="h-4 w-4 mr-1" />
+                {t("viewDetails")}
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[800px]">
+              <DialogHeader>
+                <DialogTitle>{complaint.title}</DialogTitle>
+              </DialogHeader>
+              <ComplaintDetailsComponent id={complaint.id} />
+            </DialogContent>
+          </Dialog>
         </div>
-      </Link>
-    </Motion.div>
+      </div>
+    </div>
   );
-}
+};
+
+export default ComplaintCard;

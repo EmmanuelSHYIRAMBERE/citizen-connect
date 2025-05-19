@@ -1,7 +1,7 @@
+import { Suspense } from "react";
 import { getTranslations } from "next-intl/server";
 import AnimatedCard from "@/components/animations/AnimatedCard";
 import StatsCounter from "@/components/data-viz/StatsCounter";
-import { Suspense } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 import ComplaintList from "../complaints/ComplaintList.tsx";
 

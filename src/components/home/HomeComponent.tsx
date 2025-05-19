@@ -4,10 +4,10 @@ import { useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRef } from "react";
-import { ComplaintCard } from "@/components/complaints/ComplaintCard";
 import { ComplaintStatus } from "@/types/complaint.types";
 import AnimatedStats from "../data-viz/AnimatedStats";
 import { Motion } from "../animations/MotionWrapper";
+import ComplaintCard from "../complaints/ComplaintCard";
 
 const HomeComponent = () => {
   const t = useTranslations("Home");

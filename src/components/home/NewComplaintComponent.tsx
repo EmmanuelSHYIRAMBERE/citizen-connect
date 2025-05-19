@@ -29,7 +29,7 @@ const NewComplaintComponent = () => {
     attachments: [] as File[],
   });
 
-  const handleNext = (data: NewComplaintData) => {
+  const handleNext = async (data: NewComplaintData) => {
     setFormData((prev) => {
       if (data.location && typeof data.location === "object") {
         return {
@@ -84,7 +84,10 @@ const NewComplaintComponent = () => {
             onSubmit={handleSubmit}
             currentStepReady={currentStep}
           >
-            <ComplaintForm />
+            <ComplaintForm
+              onSubmit={handleNext}
+              onCancel={() => setCurrentStep(0)}
+            />
             <LocationStep
               initialData={formData}
               onNext={handleNext}

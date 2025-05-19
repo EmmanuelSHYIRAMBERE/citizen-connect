@@ -12,13 +12,13 @@ export default function StepIndicator({
   const t = useTranslations("Complaints.steps");
 
   return (
-    <div className="flex items-center justify-between mb-8">
+    <div className="grid grid-cols-3 items-center justify-between mb-8">
       {steps.map((step, index) => (
         <div key={index} className="flex items-center">
           <div
             className={`w-8 h-8 rounded-full flex items-center justify-center ${
               index <= currentStep
-                ? "bg-blue-200 text-primary-foreground"
+                ? "bg-yellow-500 text-primary-foreground"
                 : "bg-green-200 text-gray-600"
             }`}
           >

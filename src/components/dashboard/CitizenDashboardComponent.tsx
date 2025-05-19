@@ -1,14 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { ComplaintCard } from "@/components/complaints/ComplaintCard";
 import { useEffect, useState } from "react";
 import StatsCard from "@/components/data-viz/StatsCard";
 import AnimatedProgress from "@/components/animations/AnimatedProgress";
 import { Complaint } from "@/types/complaint.types";
-import Link from "next/link";
 import { Button } from "../ui/button";
 import { Motion } from "../animations/MotionWrapper";
+import ComplaintCard from "../complaints/ComplaintCard";
 
 const CitizenDashboardComponent = () => {
   const t = useTranslations("Citizen");

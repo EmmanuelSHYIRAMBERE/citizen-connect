@@ -14,7 +14,7 @@ export async function detectLanguage(text: string): Promise<string> {
     return LANGUAGE_MAP[langCode];
   }
 
-  return "en-US"; // Default to English
+  return "rw"; // Default to Kinyarwanda
 }
 
 export async function translateText(

@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { ComplaintCard } from "@/components/complaints/ComplaintCard";
 import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import {
@@ -15,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Complaint } from "@/types/complaint.types";
 import { LoadingSkeleton } from "../ui/system-skeletons";
 import { Motion } from "../animations/MotionWrapper";
+import ComplaintCard from "./ComplaintCard";
 
 const PublicComplaintsComponent = () => {
   const t = useTranslations("Complaints");
